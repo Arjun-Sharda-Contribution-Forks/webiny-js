@@ -73,6 +73,7 @@ const ContentEntriesAutocomplete: React.FC<ContentEntriesAutocompleteProps> = ({
                     value={value || undefined}
                     options={options}
                     label={field.label}
+                    data-testid={`fr.input.autocomplete.${field.label}`}
                     description={
                         <>
                             {field.helpText}
