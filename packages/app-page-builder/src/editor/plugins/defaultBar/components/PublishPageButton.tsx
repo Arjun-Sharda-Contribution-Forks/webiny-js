@@ -33,6 +33,7 @@ const PublishPageButton: React.FC<PublishPageButtonProps> = props => {
         >
             {({ showConfirmation }) => (
                 <ButtonPrimary
+                    data-testid="pb.editor.header.publish.button"
                     onClick={() => {
                         showConfirmation(async () => {
                             const response = await pageBuilder.publishPage(page as { id: string }, {
